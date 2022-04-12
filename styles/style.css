@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    font-size: .9rem;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    height: 43.5px;
+}
+
+main {
+    height: calc(100vh - 43.5px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    font-size: .7rem;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+label,
+input {
+    font-size: .6rem;
+}
+
