@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Export excel to Mongo</title>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"
+    ></script>    
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header><h1>Export Excel to Mongo Cloud</h1></header>
     <main>
-        <div class="container">
+        <div class="container container-select-file">
             <label for="nomeArquivo">Selecione um arquivo excel</label>
             <input type="file" id="nomeArquivo">
         </div>
+        <div class="container container-select-sheet">
+            <label for="sheets">Selecione uma planilha</label>
+            <button class="btn-send-file" disabled="true">Enviar</button>
+            <select class="select-sheets" name="select-sheets" id="sheets"></select>
+        </div>
     </main>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>

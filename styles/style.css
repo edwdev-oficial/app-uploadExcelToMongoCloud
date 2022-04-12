@@ -18,7 +18,7 @@ main {
     height: calc(100vh - 43.5px);
 }
 
-.container {
+.container-select-file {
     display: flex;
     flex-direction: column;
     margin: 25px;
@@ -32,5 +32,28 @@ label {
 label,
 input {
     font-size: .6rem;
+}
+
+.container-select-sheet {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    font-size: .7rem;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50vh;
+}
+
+.select-sheets {
+    width: 200px;
+}
+
+.btn-send-file {
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;   
+    font-size: .7rem; 
+    cursor: pointer;
 }
 
